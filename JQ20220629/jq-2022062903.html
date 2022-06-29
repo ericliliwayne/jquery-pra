@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide {
+            display: none;
+        }
+        .color{
+            color: darkviolet;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- <div id="menu1" onclick="fun1()"> -->
+    <div>
+        主要選單1
+    </div>
+    <ul>
+        <li>次選單 1-1</li>
+        <li>次選單 1-2</li>
+        <li>次選單 1-3</li>
+    </ul>
+    <!-- <div id="menu2" onclick="fun2()"> -->
+    <div>
+        主要選單2
+    </div>
+    <ul>
+        <li>次選單 2-1</li>
+        <li>次選單 2-2</li>
+        <li>次選單 2-3</li>
+    </ul>
+
+    <div>
+        主要選單3
+    </div>
+    <ul>
+        <li>次選單 3-1</li>
+        <li>次選單 3-2</li>
+        <li>次選單 3-3</li>
+    </ul>
+    <script>
+        // hw 20220622
+        // 主要選單 1
+        //  次選單 1-1
+        //  次選單 1-2
+        //  次選單 1-3
+        // 主要選單 2
+        //  次選單 2-1
+        //  次選單 2-2
+        //  次選單 2-3
+        // 
+        // 功能: 當選主要選單時 隱藏或出現次選單
+
+        //方法一
+        const menu1 = document.getElementById('menu1');
+        const myul1 = document.getElementById('myul1');
+        const menu2 = document.getElementById('menu2');
+        const myul2 = document.getElementById('myul2');
+
+        function fun1() {
+            console.log('fun1 OK');
+            if (myul1.style.display != "none") {
+                myul1.style.display = "none";
+            } else {
+                myul1.style.display = "block";
+            }
+        }
+
+        function fun2() {
+            console.log('fun2 OK');
+            if (myul2.style.display != "none") {
+                myul2.style.display = "none";
+            } else {
+                myul2.style.display = "block";
+            }
+        }
+
+        //方法二
+        // function togglefun(element) {
+        //     console.log('togglefun OK');
+        //     console.log('element',element);
+        //     //找最近的element ul
+        //     const nextul = element.nextElementSibling;
+        //     console.log('nextul',nextul);
+        //     if(nextul.style.display != "none"){
+        //         nextul.style.display="none";
+        //     }else{
+        //         nextul.style.display="block";
+        //     }
+        // }
+
+        //方法三
+        // function togglefun(element) {
+        //     console.log('togglefun OK');
+        //     console.log('element', element);
+        //     //找最近的element ul
+        //     const nextul = element.nextElementSibling;
+        //     console.log('nextul', nextul);
+        //     nextul.classList.toggle(hide);
+        // }
+
+        //方法四 jquery
+        $(document).ready(function() {
+            //div click
+            $('div').click(function() {
+                // const mythis = $(this);
+                // const nexlobj = mythis.next();
+                // console.log('nexlobj',nexlobj);
+                //$(this).next().toggle();
+                $(this).next().toggleClass('color');
+            });
+            //
+        });
+    </script>
+</body>
+
+</html>

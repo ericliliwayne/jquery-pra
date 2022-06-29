@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color: tomato;
+        }
+        .color2{
+            color: green;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.1</li>
+        <li>Lorem ipsum dolor sit amet.2</li>
+        <li>Lorem ipsum dolor sit amet.3</li>
+        <li>Lorem ipsum dolor sit amet.4</li>
+        <li>Lorem ipsum dolor sit amet.5</li>
+        <li>Lorem ipsum dolor sit amet.6</li>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            //list first last
+            let obj = $('ul > li:last');
+            //even偶數 odd基數
+            let liobj = $('ul > li:even');
+            console.log('obj',obj);
+            obj.addClass('color');
+            liobj.addClass('color2');
+
+            //建議方式
+            let objok = $('ul > li').first();
+            console.log('objok',objok);
+        });
+    </script>
+</body>
+
+</html>

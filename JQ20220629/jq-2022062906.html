@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia!</p>
+    <div class="hide">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed harum sit vel? Assumenda explicabo
+        consequatur quam saepe impedit iure hic id aperiam nisi harum? Culpa blanditiis nisi excepturi consequuntur? Hic
+        nulla quidem commodi molestias labore voluptatibus, nesciunt libero aut officiis consectetur? Obcaecati eligendi
+        temporibus in deserunt tempora voluptates at voluptate. Autem quis ab quo, quaerat illo optio magni rem
+        repellendus, ipsam officiis exercitationem eaque nostrum. Neque, fuga debitis sequi quia iure reiciendis hic
+        dolor cumque quaerat rerum? Facere perferendis ab quisquam iusto delectus, laboriosam inventore est consectetur
+        omnis! Quas, soluta perferendis? Sunt, veritatis quo. Vero officiis exercitationem excepturi recusandae optio
+        provident dicta est eos consequuntur tempora quaerat, enim quod dolores incidunt nesciunt itaque cum nisi
+        consectetur non doloribus quia! Aspernatur corporis modi aliquam maxime eos pariatur atque! Odio quibusdam
+        reprehenderit iste ea. Rem maxime aliquid tempora quam autem molestias repellendus eius sequi, dolore quos,
+        aliquam nihil eligendi dicta cum doloremque incidunt recusandae enim reiciendis labore odio. Vel aspernatur
+        praesentium error sunt dolorem ex explicabo, repellat unde ut eligendi fugiat quisquam iusto assumenda
+        molestiae. Reprehenderit odio optio ipsam cupiditate similique voluptatem dicta quibusdam iure placeat minima!
+        Id quisquam quos distinctio numquam, doloremque, sunt similique beatae quae harum repellat, veniam modi!
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('p').click(function () {
+            //hide show toggle隱藏
+            //$(this).hide();
+            //$(this).remove();
+            $('div').slideToggle('1500', function () {alert('hello!');})
+        });
+
+    });
+</script>
+
+</html>
