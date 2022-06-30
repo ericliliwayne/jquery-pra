@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .divBtn{
+                text-align: center;
+                padding: 20px;
+                border: 1px solid black;
+                background-color: lightblue;
+            }
+            .divContent{
+                border: 1px solid black;
+                background-color: lightgray;
+                display: none;
+                text-align: center;
+            }
+            .open{
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                border: 1px solid balck;
+                text-align: right;
+                background-color: aqua;
+            }
+        </style>
+</head>
+
+<body>
+    <button class="open">全部展開</button>
+    <div class="divBtn">景點一</div>
+    <div class="divContent" data-money="1000">
+        <h3>迪士尼樂園</h3>
+        <img src="https://picsum.photos/id/239/200/300" alt=""><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur iusto neque sunt quis
+        reprehenderit similique ullam eveniet. Magnam dignissimos facere dicta atque inventore aperiam voluptate harum
+        praesentium molestias vel esse, similique reprehenderit minus explicabo modi quaerat nostrum, rem doloremque
+        voluptas aspernatur eius. Ratione itaque delectus aperiam expedita. Enim repudiandae inventore at quam, beatae
+        quas nesciunt veniam error laudantium corrupti mollitia dolores repellendus id, ab quidem iste dicta totam neque
+        dolorum corporis, accusantium quasi facere ex ducimus. Consequuntur necessitatibus temporibus cum porro,
+        laborum, excepturi officiis quibusdam accusamus labore doloremque doloribus in accusantium praesentium? Nemo,
+        laborum dignissimos, aperiam, est omnis animi eos consequuntur alias quos corporis quibusdam repellendus
+        veritatis! Doloremque veritatis voluptatibus facere illum placeat quam omnis quas earum, id dolorum cum,
+        accusamus, ullam libero dolor quisquam. Quos illo laborum dignissimos esse iusto eligendi exercitationem
+        doloribus, accusantium quasi odio voluptates quis nemo, dolorem sequi ea provident mollitia inventore doloremque
+        amet qui sunt quod ipsa, repudiandae corporis! Deleniti accusamus temporibus perspiciatis inventore autem fugiat
+        aut amet, porro dolorem, laudantium dolores. Consequatur, obcaecati eligendi deleniti neque suscipit odio animi
+        optio ratione voluptates quo perferendis rerum dolores, quisquam voluptatum? Ullam laudantium iusto
+        exercitationem voluptates maxime voluptatum ducimus quibusdam distinctio quas, temporibus praesentium nulla
+        neque ipsa similique amet qui veniam optio sapiente, obcaecati quod consequatur dolor incidunt. Cumque qui non
+        beatae sunt culpa, deserunt ducimus architecto rerum a unde facilis dicta, consequuntur alias, eius laboriosam
+        velit suscipit corporis. Quibusdam, ratione illum magnam numquam modi hic praesentium vitae nostrum magni
+        facilis eum temporibus dolor, recusandae necessitatibus, reiciendis sunt ut cupiditate consequatur
+        exercitationem esse ducimus! Nisi, eos. Voluptatem cumque velit odit minus voluptate possimus rem at consectetur
+        saepe, libero, soluta aspernatur quo consequuntur sint architecto dolore modi quisquam similique accusamus quod
+        reprehenderit! Nam consequatur illum tempore vero doloribus! Inventore nemo quibusdam itaque corrupti similique
+        quam minima? Rerum neque, mollitia nostrum earum autem distinctio rem dolore ipsam natus. Non, corporis
+        possimus. Perspiciatis voluptatum non est fugit, debitis vel error magni explicabo sint beatae hic? Laudantium
+        officia laborum alias nobis consequuntur, reprehenderit veritatis veniam, explicabo reiciendis vel mollitia!
+        Saepe, iure officiis veritatis quas quisquam architecto quaerat animi. Hic tenetur molestiae in quibusdam
+        explicabo est cumque asperiores, consequuntur porro, magnam eum non laborum ducimus, animi dignissimos provident
+        eaque aliquam quo voluptatibus commodi. Dolor in doloribus autem corporis quasi atque reprehenderit ipsam, harum
+        impedit hic facere architecto exercitationem accusamus eligendi commodi. Quod quidem rem commodi blanditiis
+        ipsum? Id officia corrupti sed repellat nam! Quam et veniam aperiam natus. Sint, ex fugit accusamus dolorem
+        voluptatum quas cupiditate? At pariatur harum quidem eaque earum quasi in, omnis ad? Dolores autem neque illo
+        quae delectus voluptatum ad. Repudiandae iusto veniam sit, libero deserunt sint nostrum mollitia quae accusamus!
+        Numquam quia dolores inventore eligendi debitis ratione voluptatibus voluptate eius? Perspiciatis ullam eius
+        magni ipsam quasi quo rerum earum repellendus, atque dolorem eum assumenda illo dolore itaque esse nesciunt qui
+        sint quis sapiente debitis repudiandae? Natus quia et eos, quae iste possimus explicabo distinctio at sint optio
+        eius quisquam voluptates laudantium dolorem dolorum obcaecati debitis libero. <br>
+        <div style="display: flex;"><button style="margin:10px auto;">點我報名</button></div>
+    </div>
+    <div class="divBtn">景點二</div>
+    <div class="divContent" data-money="2000">
+        <h3>迪士尼樂園</h3>
+        <img src="https://picsum.photos/id/238/200/300" alt=""><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur iusto neque sunt quis
+        reprehenderit similique ullam eveniet. Magnam dignissimos facere dicta atque inventore aperiam voluptate harum
+        praesentium molestias vel esse, similique reprehenderit minus explicabo modi quaerat nostrum, rem doloremque
+        voluptas aspernatur eius. Ratione itaque delectus aperiam expedita. Enim repudiandae inventore at quam, beatae
+        quas nesciunt veniam error laudantium corrupti mollitia dolores repellendus id, ab quidem iste dicta totam neque
+        dolorum corporis, accusantium quasi facere ex ducimus. Consequuntur necessitatibus temporibus cum porro,
+        laborum, excepturi officiis quibusdam accusamus labore doloremque doloribus in accusantium praesentium? Nemo,
+        laborum dignissimos, aperiam, est omnis animi eos consequuntur alias quos corporis quibusdam repellendus
+        veritatis! Doloremque veritatis voluptatibus facere illum placeat quam omnis quas earum, id dolorum cum,
+        accusamus, ullam libero dolor quisquam. Quos illo laborum dignissimos esse iusto eligendi exercitationem
+        doloribus, accusantium quasi odio voluptates quis nemo, dolorem sequi ea provident mollitia inventore doloremque
+        amet qui sunt quod ipsa, repudiandae corporis! Deleniti accusamus temporibus perspiciatis inventore autem fugiat
+        aut amet, porro dolorem, laudantium dolores. Consequatur, obcaecati eligendi deleniti neque suscipit odio animi
+        optio ratione voluptates quo perferendis rerum dolores, quisquam voluptatum? Ullam laudantium iusto
+        exercitationem voluptates maxime voluptatum ducimus quibusdam distinctio quas, temporibus praesentium nulla
+        neque ipsa similique amet qui veniam optio sapiente, obcaecati quod consequatur dolor incidunt. Cumque qui non
+        beatae sunt culpa, deserunt ducimus architecto rerum a unde facilis dicta, consequuntur alias, eius laboriosam
+        velit suscipit corporis. Quibusdam, ratione illum magnam numquam modi hic praesentium vitae nostrum magni
+        facilis eum temporibus dolor, recusandae necessitatibus, reiciendis sunt ut cupiditate consequatur
+        exercitationem esse ducimus! Nisi, eos. Voluptatem cumque velit odit minus voluptate possimus rem at consectetur
+        saepe, libero, soluta aspernatur quo consequuntur sint architecto dolore modi quisquam similique accusamus quod
+        reprehenderit! Nam consequatur illum tempore vero doloribus! Inventore nemo quibusdam itaque corrupti similique
+        quam minima? Rerum neque, mollitia nostrum earum autem distinctio rem dolore ipsam natus. Non, corporis
+        possimus. Perspiciatis voluptatum non est fugit, debitis vel error magni explicabo sint beatae hic? Laudantium
+        officia laborum alias nobis consequuntur, reprehenderit veritatis veniam, explicabo reiciendis vel mollitia!
+        Saepe, iure officiis veritatis quas quisquam architecto quaerat animi. Hic tenetur molestiae in quibusdam
+        explicabo est cumque asperiores, consequuntur porro, magnam eum non laborum ducimus, animi dignissimos provident
+        eaque aliquam quo voluptatibus commodi. Dolor in doloribus autem corporis quasi atque reprehenderit ipsam, harum
+        impedit hic facere architecto exercitationem accusamus eligendi commodi. Quod quidem rem commodi blanditiis
+        ipsum? Id officia corrupti sed repellat nam! Quam et veniam aperiam natus. Sint, ex fugit accusamus dolorem
+        voluptatum quas cupiditate? At pariatur harum quidem eaque earum quasi in, omnis ad? Dolores autem neque illo
+        quae delectus voluptatum ad. Repudiandae iusto veniam sit, libero deserunt sint nostrum mollitia quae accusamus!
+        Numquam quia dolores inventore eligendi debitis ratione voluptatibus voluptate eius? Perspiciatis ullam eius
+        magni ipsam quasi quo rerum earum repellendus, atque dolorem eum assumenda illo dolore itaque esse nesciunt qui
+        sint quis sapiente debitis repudiandae? Natus quia et eos, quae iste possimus explicabo distinctio at sint optio
+        eius quisquam voluptates laudantium dolorem dolorum obcaecati debitis libero. <br>
+        <div style="display: flex;"><button style="margin:10px auto;">點我報名</button></div>
+    </div>
+    <div class="divBtn">景點三</div>
+    <div class="divContent" data-money="3000">
+        <h3>迪士尼樂園</h3>
+        <img src="https://picsum.photos/id/237/200/300" alt=""><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur iusto neque sunt quis
+        reprehenderit similique ullam eveniet. Magnam dignissimos facere dicta atque inventore aperiam voluptate harum
+        praesentium molestias vel esse, similique reprehenderit minus explicabo modi quaerat nostrum, rem doloremque
+        voluptas aspernatur eius. Ratione itaque delectus aperiam expedita. Enim repudiandae inventore at quam, beatae
+        quas nesciunt veniam error laudantium corrupti mollitia dolores repellendus id, ab quidem iste dicta totam neque
+        dolorum corporis, accusantium quasi facere ex ducimus. Consequuntur necessitatibus temporibus cum porro,
+        laborum, excepturi officiis quibusdam accusamus labore doloremque doloribus in accusantium praesentium? Nemo,
+        laborum dignissimos, aperiam, est omnis animi eos consequuntur alias quos corporis quibusdam repellendus
+        veritatis! Doloremque veritatis voluptatibus facere illum placeat quam omnis quas earum, id dolorum cum,
+        accusamus, ullam libero dolor quisquam. Quos illo laborum dignissimos esse iusto eligendi exercitationem
+        doloribus, accusantium quasi odio voluptates quis nemo, dolorem sequi ea provident mollitia inventore doloremque
+        amet qui sunt quod ipsa, repudiandae corporis! Deleniti accusamus temporibus perspiciatis inventore autem fugiat
+        aut amet, porro dolorem, laudantium dolores. Consequatur, obcaecati eligendi deleniti neque suscipit odio animi
+        optio ratione voluptates quo perferendis rerum dolores, quisquam voluptatum? Ullam laudantium iusto
+        exercitationem voluptates maxime voluptatum ducimus quibusdam distinctio quas, temporibus praesentium nulla
+        neque ipsa similique amet qui veniam optio sapiente, obcaecati quod consequatur dolor incidunt. Cumque qui non
+        beatae sunt culpa, deserunt ducimus architecto rerum a unde facilis dicta, consequuntur alias, eius laboriosam
+        velit suscipit corporis. Quibusdam, ratione illum magnam numquam modi hic praesentium vitae nostrum magni
+        facilis eum temporibus dolor, recusandae necessitatibus, reiciendis sunt ut cupiditate consequatur
+        exercitationem esse ducimus! Nisi, eos. Voluptatem cumque velit odit minus voluptate possimus rem at consectetur
+        saepe, libero, soluta aspernatur quo consequuntur sint architecto dolore modi quisquam similique accusamus quod
+        reprehenderit! Nam consequatur illum tempore vero doloribus! Inventore nemo quibusdam itaque corrupti similique
+        quam minima? Rerum neque, mollitia nostrum earum autem distinctio rem dolore ipsam natus. Non, corporis
+        possimus. Perspiciatis voluptatum non est fugit, debitis vel error magni explicabo sint beatae hic? Laudantium
+        officia laborum alias nobis consequuntur, reprehenderit veritatis veniam, explicabo reiciendis vel mollitia!
+        Saepe, iure officiis veritatis quas quisquam architecto quaerat animi. Hic tenetur molestiae in quibusdam
+        explicabo est cumque asperiores, consequuntur porro, magnam eum non laborum ducimus, animi dignissimos provident
+        eaque aliquam quo voluptatibus commodi. Dolor in doloribus autem corporis quasi atque reprehenderit ipsam, harum
+        impedit hic facere architecto exercitationem accusamus eligendi commodi. Quod quidem rem commodi blanditiis
+        ipsum? Id officia corrupti sed repellat nam! Quam et veniam aperiam natus. Sint, ex fugit accusamus dolorem
+        voluptatum quas cupiditate? At pariatur harum quidem eaque earum quasi in, omnis ad? Dolores autem neque illo
+        quae delectus voluptatum ad. Repudiandae iusto veniam sit, libero deserunt sint nostrum mollitia quae accusamus!
+        Numquam quia dolores inventore eligendi debitis ratione voluptatibus voluptate eius? Perspiciatis ullam eius
+        magni ipsam quasi quo rerum earum repellendus, atque dolorem eum assumenda illo dolore itaque esse nesciunt qui
+        sint quis sapiente debitis repudiandae? Natus quia et eos, quae iste possimus explicabo distinctio at sint optio
+        eius quisquam voluptates laudantium dolorem dolorum obcaecati debitis libero. <br>
+        <div style="display: flex;"><button style="margin:10px auto;">點我報名</button></div>
+    </div>
+    <script>
+        let discount = 0.8;
+        let oldText = $('.divContent > h3').first().text();
+            console.log('oldText', oldText);
+            // jquery data-set
+            let dataText = $('.divContent').first().data('money'); //int            
+            // let dataText = $('.divContent').first().attr('data-money'); //抓string
+            console.log('dataText', dataText);
+            $('.divContent > h3').first().text('oldText 原價 =>' + dataText + ' 限時特價 => ' + dataText * discount);
+        $(document).ready(function() {
+            $('.divBtn').click(function() {
+                console.log(this); 
+                //$('#divContent').toggle();               
+               //$('#divContent').slideUp();               
+                $(this).next().slideToggle();//練習一               
+            });
+            //方法一
+            $('.open').click(function() { //練習三:原本open all -> 點擊按鈕 -> close all
+                if($('.divContent').is(":hidden")){
+                    $('.divContent').slideDown();
+                    $('.open').text('全部關閉');
+                }else{
+                    $('.divContent').slideUp();//練習二:增加一個按鈕全部收起來
+                    $('.open').text('全部開啟');
+                }
+            });
+        });
+        //方法二:flag
+        //divFlag = 0;close
+        //divFlag = 1;open
+        //練習四
+        //div data-money = 1000
+        //h3換過去，原本迪士尼樂園原價1000 => 特價800
+       
+
+    </script>
+</body>
+
+</html>

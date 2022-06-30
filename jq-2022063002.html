@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <h3>jq btn => div</h3>
+    <p id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, labore.</p>
+    <p id="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat?</p>
+    <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <hr>
+    <button type="button" id="hideBtn">hideBtn</button>
+    <button type="button" id="showBtn">showBtn</button>
+    <button type="button" id="toggleBtn">toggleBtn</button>
+<script>
+    $(document).ready(function() {
+        $('#blue').css("color","blue");
+        $('#red').css("color","red");
+        //練習一 hide show toggle 按鈕控制
+        $('#hideBtn').click(function() {
+            $('p').hide();
+        });
+        $('#showBtn').click(function() {
+            $('p').show();
+        });
+        $('#toggleBtn').click(function() {
+            $('p').toggle();
+        });
+        //練習二 p tag click hide
+        $('p').click(function() {
+            $('p').hide();
+        });
+
+        let allMyP = $('.myP').each(function(index,element) {
+            console.log(this);
+            let oldtext = $(this).text();
+            $(this).text(`${index+1} ${oldtext}`);
+        });
+        console.log(allMyP);
+    });
+ 
+</script>
+</body>
+
+</html>
