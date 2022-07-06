@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投籃機記分系統</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .score{
+                width: 80vw;
+                height: 50vh;
+                margin: 10px auto;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid black;
+            }
+            .ball{
+                width: 80vw;
+                height: 40vh;
+                margin: 10px auto;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid black;
+            }
+            .title{
+                font-size: 70px;
+            }
+            .sum{
+                color: red;
+                font-size: 50px;
+            }
+            .in{
+                width: 30%;
+                height: 20%;
+            }
+            .clear{
+                width: 30%;
+                height: 20%;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="progessbar">
+        <div class="text"></div>
+        <div class="bar"></div>
+     </div>
+    <div class="score">
+        <p class="title">分數</p>
+        <p class="sum">0</p>
+    </div>
+    <div class="ball">
+        <p class="time">0</p>
+        <button class="in">進球</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="clear">分數重置</button>
+        <button class="count">記時開始</button>
+    </div>
+
+    <script>
+        
+        $(document).ready(function () {
+            let result = 0;
+            let score = 0;
+            $('.in').click(function () {
+                
+                if(count>=20){
+                    score += 3;
+                }else{
+                    score += 2;
+                }
+                // if(score>=100){
+                //     score += 3;
+                // }else{
+                //     score += 2;
+                // }
+                $('.sum').text(score);
+            });
+            $('.clear').click(function () {
+                
+                score = 0;
+            });
+            let count = 60;
+            $('.count').click(function () {
+                function timer() {
+                    count-=0.1;
+                }
+                setTimeout(timer(),100);
+                $('.time').text(count);
+                console.log(count);
+        });
+    });
+    </script>
+</body>
+
+</html>
